@@ -1,2 +1,7 @@
 .idea/
 geometric_lib_1job/Лабораторная\ работа\ по\ Git.docx
+docs_job2/__pycache__/
+docs_job2/geometric_lib/.t
+docs_job2/*.docx
+docs_job2/.*
+geometric_lib/.*
