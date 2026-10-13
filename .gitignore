@@ -5,3 +5,11 @@ docs_job2/geometric_lib/.t
 docs_job2/*.docx
 docs_job2/.*
 geometric_lib/.*
+lab3/reserch-and-profile-cpp-plugin/.kotlin/
+lab3/reserch-and-profile-cpp-plugin/.run/
+lab3/reserch-and-profile-cpp-plugin/gradle/wrapper/
+docs_job2/geometric_lib/__pycache__/
+"geometric_lib/\320\233\320\260\320\261\320\276\321\200\320\260\321\202\320\276\321\200\320\275\320\260\321\217 \321\200\320\260\320\261\320\276\321\202\320\260 \320\277\320\276 Git.docx"
+geometric_lib/'Лабораторная работа по Git.docx'
+gradlew
+lab3/reserch-and-profile-cpp-plugin/gradlew

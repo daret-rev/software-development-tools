@@ -1,0 +1,29 @@
+import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
+
+rootProject.name = "reserch-and-profile-cpp"
+
+pluginManagement {
+    plugins {
+        id("org.jetbrains.kotlin.jvm") version "2.2.20"
+        id("org.jetbrains.changelog") version "2.5.0"
+        id("org.jetbrains.kotlin.plugin.compose") version "2.2.20"
+        id("org.jetbrains.dokka") version "2.0.0"
+    }
+}
+
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+    id("org.jetbrains.intellij.platform.settings") version "2.19.0"
+}
+
+dependencyResolutionManagement {
+    // Configure all projects' repositories
+    repositories {
+        mavenCentral()
+
+        // IntelliJ Platform Gradle Plugin Repositories Extension - read more: https://plugins.jetbrains.com/docs/intellij/tools-intellij-platform-gradle-plugin-repositories-extension.html
+        intellijPlatform {
+            defaultRepositories()
+        }
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>hardwareCountersProfile</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+            <a class="library-name--link" href="../../index.html">
+                    Reserch and Profile C++
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0-SNAPSHOT        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active=""
+                        data-filter=":/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":/main"
+                                       data-filter=":/main"/>
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                        data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Reserch and Profile C++
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="Reserch and Profile C++::com.dar.daret_rev.plugin.core//hardwareCountersProfile/#java.io.File#java.io.File#com.dar.daret_rev.plugin.core.ProjectState?#java.lang.ProcessBuilder?/PointingToDeclaration//-251573632">
+  <div class="breadcrumbs"><a href="../../index.html">Reserch and Profile C++</a><span class="delimiter">/</span><a href="index.html">com.dar.daret_rev.plugin.core</a><span class="delimiter">/</span><span class="current">hardwareCountersProfile</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>hardware</span><wbr></wbr><span>Counters</span><wbr></wbr><span><span>Profile</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":/main"><div class="symbol monospace"><span class="token keyword">internal </span><span class="token keyword">fun </span><a href="hardware-counters-profile.html"><span class="token function">hardwareCountersProfile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">basePath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html">File</a><span class="token punctuation">, </span></span><span class="parameter ">argsFile<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html">File</a><span class="token punctuation">, </span></span><span class="parameter ">projectState<span class="token operator">: </span><a href="-project-state/index.html">ProjectState</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">processInit<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/ProcessBuilder.html">ProcessBuilder</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="-hardware-counters-profile-result/index.html">HardwareCountersProfileResult</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="-cmake-builder/-generation-result/index.html">CmakeBuilder.GenerationResult</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><p class="paragraph">Запускает аналитику аппаратных счетчиков через <code class="lang-kotlin">perf stat</code></p><p class="paragraph">Запускает <code class="lang-kotlin">perf stat -r 5 -x, -e cycles,instructions,branches,branch-misses,cache-misses</code> для собранного бинарника. Результат сохраняет во временный CSV-файл <code class="lang-kotlin">/tmp/stat.csv</code>. После файл парсится и разбирается на пары ключ-значение -- берется значение (первое поле) и ставится в соответсявие имени параметра (третье поле)</p><p class="paragraph">Из собранных данных формируется <a href="-hardware-counters-profile-result/index.html">HardwareCountersProfileResult</a>:</p><ul><li><p class="paragraph"><code class="lang-kotlin">cycles</code>, <code class="lang-kotlin">instructions</code>, <code class="lang-kotlin">branches</code>, <code class="lang-kotlin">branchMisses</code>, <code class="lang-kotlin">cacheMisses</code> - значения из счетчиков;</p></li><li><p class="paragraph"><code class="lang-kotlin">IPC</code> - <code class="lang-kotlin">instructions / cycles</code>;</p></li><li><p class="paragraph"><code class="lang-kotlin">proportionalMisses</code> - <code class="lang-kotlin">100 * branchMisses / branches</code>;</p></li></ul><p class="paragraph">Не распознаные счётчики остаются <code class="lang-kotlin">null</code> (в отчёте <code class="lang-kotlin">н/д</code>).</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">Pair <a href="-hardware-counters-profile-result/index.html">HardwareCountersProfileResult</a> и null при успехе, либо null и <a href="-cmake-builder/-generation-result/-e-r-r-o-r/index.html">GenerationResult.ERROR</a> при ошибке</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>base</span><wbr></wbr><span><span>Path</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Корневая директория проекта.</p></div></div></div></div><div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>args</span><wbr></wbr><span><span>File</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Файл с аргументами для тестирования</p></div></div></div></div><div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>project</span><wbr></wbr><span><span>State</span></span></u></div></span></div><div><div class="title"><p class="paragraph"><a href="-project-state/index.html">ProjectState</a> Информация о проекте</p></div></div></div></div><div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>process</span><wbr></wbr><span><span>Init</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Конструктор процессов в корне проекта, через который выполняются команды и собирается информация. При получении <code class="lang-kotlin">null</code> создается новый <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/ProcessBuilder.html">ProcessBuilder</a> с раюбочей дерикторией в корне проекта <code class="lang-kotlin">project.basePath</code></p></div></div></div></div></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-hardware-counters-profile-result/index.html"><span>Hardware</span><wbr></wbr><span>Counters</span><wbr></wbr><span>Profile</span><wbr></wbr><span><span>Result</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":/main" data-filterable-set=":/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="-project-state/index.html"><span>Project</span><wbr></wbr><span><span>State</span></span></a></div></span></div><div></div></div></div></div><h4 class="">Samples</h4>com.dar.daret_rev.plugin.samples.hardwareCountersProfileSample</div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2026 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
