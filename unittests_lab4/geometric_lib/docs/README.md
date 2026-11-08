@@ -61,7 +61,15 @@ python -m doctest -v circle.py rectangle.py square.py triangle.py
 
 ## История изменения проекта
 
+- Документация обновлена после создания BUGREPORT.md
 - Добавлено автоматическое тестирование модулей.
+```text
+commit 07f6e8852f58f98f08027fe6335139d83bc58d2d (HEAD -> main, origin/main)
+Author: daret <a20atam.com@gmail.com>
+Date:   Mon Nov 9 02:38:48 2026 +0300
+
+    Добавлено тестирование и bugreport
+```
 - Создана папка `docs` и добавлена документация проекта.
 ```text
 commit 3de7c8e75b98a5e1f10ae9c68c9021ee0d92d135
