@@ -20,23 +20,12 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 73786976294838206464)
 
     def test_negative_perimeter_negative_numbers(self):
-        try:
-            res = square.perimeter(-5)
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert square.perimeter(-5) in (None, False)
 
     def test_negative_perimeter_string(self):
-        try:
-            res = square.perimeter("7")
-            if res is None or res == False:
-                return
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert square.perimeter("7") in (None, False)
 
     def test_positive_area_integers(self):
         res = square.area(4)
@@ -55,21 +44,9 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 340282366920938463463374607431768211456)
 
     def test_negative_area_negative_numbers(self):
-        try:
-            res = square.area(-5)
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert square.area(-5) in (None, False)
 
     def test_negative_area_string(self):
-        try:
-            res = square.area("7")
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert square.area("7") in (None, False)

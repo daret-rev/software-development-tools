@@ -15,13 +15,13 @@
 #### Тесты для ознакомления
 
 - [Circle perimeter](../tests/test_circle.py#L23) ( test_negative_perimeter_negative_numbers )
-- [Circle area](../tests/test_circle.py#L59) ( test_negative_area_negative_numbers )
+- [Circle area](../tests/test_circle.py#L47) ( test_negative_area_negative_numbers )
 - [Rectangle perimeter](../tests/test_rectangle.py#L22) ( test_negative_perimeter_negative_numbers )
-- [Rectangle area](../tests/test_rectangle.py#L58) ( test_negative_area_negative_numbers )
+- [Rectangle area](../tests/test_rectangle.py#L47) ( test_negative_area_negative_numbers )
 - [Square perimeter](../tests/test_square.py#L22) ( test_negative_perimeter_negative_numbers )
-- [Square area](../tests/test_square.py#L57) ( test_negative_area_negative_numbers )
+- [Square area](../tests/test_square.py#L46) ( test_negative_area_negative_numbers )
 - [Triangle perimeter](../tests/test_triangle.py#L22) ( test_negative_perimeter_negative_numbers )
-- [Triangle area](../tests/test_triangle.py#L57) ( test_negative_area_negative_numbers )
+- [Triangle area](../tests/test_triangle.py#L47) ( test_negative_area_negative_numbers )
 
 ---
 
@@ -37,9 +37,9 @@
 
 #### Тесты для ознакомления
 
-- [Rectangle perimeter](../tests/test_rectangle.py#L32) ( test_negative_perimeter_string )
-- [Square perimeter](../tests/test_square.py#L32) ( test_negative_perimeter_string )
-- [Triangle perimeter](../tests/test_triangle.py#L32) ( test_negative_perimeter_string )
+- [Rectangle perimeter](../tests/test_rectangle.py#L26) ( test_negative_perimeter_string )
+- [Square perimeter](../tests/test_square.py#L26) ( test_negative_perimeter_string )
+- [Triangle perimeter](../tests/test_triangle.py#L27) ( test_negative_perimeter_string )
 
 ---
 
@@ -56,4 +56,4 @@
 #### Тесты для ознакомления
 
 - [Circle perimeter](../tests/test_circle.py#L19) ( test_positive_perimeter_big_numbers )
-- [Circle area](../tests/test_circle.py#L55) ( test_positive_area_big_numbers )
+- [Circle area](../tests/test_circle.py#L43) ( test_positive_area_big_numbers )

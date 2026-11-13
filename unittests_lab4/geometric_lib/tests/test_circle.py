@@ -21,24 +21,12 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 1.15904 *10**20)
 
     def test_negative_perimeter_negative_numbers(self):
-        try:
-            res = round(circle.perimeter(-1), 5)
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert circle.perimeter(-1) in (None, False)
 
     def test_negative_perimeter_string(self):
-        try:
-            res = round(circle.perimeter("5"), 5)
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert circle.perimeter("5") in (None, False)
 
     def test_positive_area_integers(self):
         res = round(circle.area(7), 3)
@@ -57,21 +45,9 @@ class CircleTestCase(unittest.TestCase):
         self.assertEqual(res, 1.06903 * 10**39)
 
     def test_negative_area_negative_numbers(self):
-        try:
-            res = circle.area(-7)
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert circle.area(-7) in (None, False)
 
     def test_negative_area_string(self):
-        try:
-            res = circle.area("5")
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert circle.area("5") in (None, False)

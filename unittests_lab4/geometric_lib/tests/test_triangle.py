@@ -20,23 +20,13 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 55340232221128654848)
 
     def test_negative_perimeter_negative_numbers(self):
-        try:
-            res = triangle.perimeter(-5, -7, -9)
-            if res is None or res == False:
-                return
+        with self.assertRaises((ValueError, TypeError)):
+            assert triangle.perimeter(-5, -7, -9) in (None, False)
 
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
 
     def test_negative_perimeter_string(self):
-        try:
-            res = triangle.perimeter("7", "9", "4")
-            if res is None or res == False:
-                return
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert triangle.perimeter("7", "9", "4") in (None, False)
 
     def test_positive_area_integers(self):
         res = round(triangle.area(5, 7), 1)
@@ -55,21 +45,9 @@ class TriangleTestCase(unittest.TestCase):
         self.assertEqual(res, 170141183460469231731687303715884105728)
 
     def test_negative_area_negative_numbers(self):
-        try:
-            res = triangle.area(-5, -4)
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert triangle.area(-5, -4) in (None, False)
 
     def test_negative_area_string(self):
-        try:
-            res = triangle.area("7", "34")
-            if res is None or res == False:
-                return
-
-        except (ValueError, TypeError):
-            return
-        self.fail("Method not throw error")
+        with self.assertRaises((ValueError, TypeError)):
+            assert triangle.area("7", "34") in (None, False)
