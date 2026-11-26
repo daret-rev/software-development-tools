@@ -1,0 +1,27 @@
+name: CI/CD unit tests
+
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: checout repository
+        uses: actions/checkout@4
+        
+      - name: set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: run tests
+        run: python -m unittest discover -s unittests_lab4/geometric_lib/tests -t .
