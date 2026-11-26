@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: checout repository
-        uses: actions/checkout@v7.1.0
+        uses: actions/checkout@v7.0.1
         
       - name: set up python
         uses: actions/setup-python@v7.1.0
